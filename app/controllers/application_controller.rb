@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(resource)
     departments_path
+    
     # sign_in_url = new_user_session_url
     # if request.referer == sign_in_url
     #   super
